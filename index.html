@@ -4,51 +4,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>replit</title>
+	<title>Decision Maker App</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-  
 </head>
 
 <body>
+	<header>
+		<h1>Your Shoe Based on Favorite Color and Age</h1>
+		<p>Enter your age and favorite color to get a shoe recommendation based on those categories</p>
+	</header>
+  <!-- This is making the drop down and telling it what to display -->
 	<center>
-		<header>Which Shoe Should You Get</header>
+		<label>Favorite Color: </label>
+    <select id="color">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+    </select>
+    <br>
+    <br>
 
-		<div class="outputBox" id="outputBox">
-			<p id="output"> </p>
-		</div>
-
-		<input type="text" oninput="getQuote()" id="quote"><br><br>
-
-  <select onchange="getQuote()" id="fontFamily" >
-    <option value="Favorite Color">Favorite Color</option>
-    <option value="Arial">Red</option>
-    <option value="Georgia">Orange</option>
-    <option value="Times New Roman">Yellow</option>
-    <option value="Courier New">Green</option>
-    <option value="Arial Black">Blue</option>
-    <option value="Helvetica">Purple</option>
-    <option value="Impact">Black</option>
-    <option value="Tahoma">White</option>
+    <label>Age: </label>
+    <input type="text" id="age"><br><br>
+      
    
-  </select>
 
-  <select onchange="getQuote()" id="color" >
-    <option value="Color">Age</option>
-<option value="lightblue">3 and Under</option>
-<option value="lightgreen">10 and Under</option>
-<option value="gold">18 and Under</option>
-<option value="lightpink">45 and Under</option>
-<option value="lavender">Older than 45</option>
-  </select>
-<br>
-  
-  <input oninput="getQuote()" type="range" min="10" max="60" value="25" class="slider" id="size">
+    <button onclick="updateScreen()">Get My Shoe!</button>
 
-  <p id="feedback"> </p>
-    </center>
- 
+    <div class="outputBox">
+      <h2>My Shoe</h2>
+		  <p id="output"> </p>
+	  </div>
+
+  </center>
     <script src="script.js"></script>
-  
- 
   </body>
 </html>
