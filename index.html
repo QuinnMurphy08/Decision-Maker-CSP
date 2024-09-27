@@ -4,16 +4,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+  <!-- this is the title of the tab/website -->
 	<title>Decision Maker App</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 	<header>
+    <!-- this is the big text at the top of the page -->
 		<h1>Your Shoe Based on Favorite Color and Age</h1>
 		<p>Enter your age and favorite color to get a shoe recommendation based on those categories</p>
 	</header>
-  <!-- This is making the drop down and telling it what to display -->
+  <!-- This is making the drop down for colors and telling it what 
+   to display and giving it values-->
 	<center>
 		<label>Favorite Color: </label>
     <select id="color">
@@ -25,22 +28,24 @@
     </select>
     <br>
     <br>
-
+<!-- this is the text box for age -->
     <label>Age: </label>
     <input type="text" id="age"><br><br>
       
    
-
+<!-- this is the button that makes everything run-->
     <button onclick="updateScreen()">Click Here for Shoe!</button>
 
-
+<!-- this is the text on the output box that tells 
+ you the shoe and shows the picture -->
     <div class="outputBox">
       <h2>My Shoe</h2>
 		  <p id="output"> </p>
+      <!-- this shows the image  -->
       <img id="image" width="70%" height="auto">
 
 	  </div>
-
+<!-- this is telling the website which java script file to run -->
   </center>
     <script src="script.js"></script>
   </body>

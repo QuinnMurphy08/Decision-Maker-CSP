@@ -12,7 +12,7 @@ body{
   }
   
   button{
-    background-color: rgb(255, 148, 148);
+    background-color: rgb(153, 236, 9);
     padding: 10px;
     font-family: monospace;
     border: none;
@@ -20,7 +20,7 @@ body{
   }
   
   header{
-    background: #ffc0cb;
+    background: pink;
     padding: 20px;
     margin-bottom: 10px;
     font-size: 20px;
@@ -36,15 +36,4 @@ body{
     padding: 10px;
     font-family: monospace;
   }
-  
-  .slider{
-    width: 50%; 
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ 
-  }
-  
-  /* Mouse-over effects */
-  .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  
   
